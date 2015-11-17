@@ -1,9 +1,9 @@
-et nu
+set nu
 set encoding=utf-8
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-c>
+:imap jk <Esc>
 syntax on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""新文件标题""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -50,4 +50,4 @@ normal G
 normal o 
 normal o 
 endf 
-autocmd bufnewfile *.py call HeaderPython() imap 
+autocmd bufnewfile *.py call HeaderPython() 
