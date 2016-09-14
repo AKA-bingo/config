@@ -1,6 +1,7 @@
 set nu
 set encoding=utf-8
 set tabstop=4
+set expandtab
 set softtabstop=4
 set shiftwidth=4
 :imap jk <Esc>
