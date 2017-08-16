@@ -1,3 +1,3 @@
 #!/bin/bash
-cp config/gitconfig ~/.gitconfig
-cp config/vimrc ~/.vimrc
+cp gitconfig ~/.gitconfig
+cp vimrc ~/.vimrc

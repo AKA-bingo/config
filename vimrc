@@ -9,14 +9,17 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 "主题设置
-set background=dark
-"colorscheme solarized
+"set background=dark
+colorscheme molokai
+let g:molokai_original = 1
 
 "设置
 syntax on
