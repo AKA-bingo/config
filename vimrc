@@ -20,11 +20,13 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 "主题设置
-colors desert  " 指定主题
-set background=dark " 深色主题
+colorscheme molokai  " 指定主题
 "let g:molokai_original = 1
+"let g:rehash256 = 1
+"set background=dark " 深色主题
 
 "设置
+filetype on "打开文件类型检测功能
 syntax on
 syntax enable
 set nu
@@ -33,12 +35,22 @@ set tabstop=4
 set expandtab
 set softtabstop=4
 set shiftwidth=4
+set langmenu=zn_CN.UTF-8
+set ruler "在编辑过程中，在右下角显示光标位置的状态行
+set laststatus=1  "总是显示状态行
+set showmatch "高亮显示对应的括号
+colorscheme molokai  " 指定主题
+set background=dark
+set t_Co=256   "256色
+set mouse=a  "允许鼠标
+set nocompatible              " 这是必需的 
+filetype off                  " 这是必需的 
 
 "设置光标定位行列
 set cursorcolumn
 set cursorline
-highlight CursorLine   cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-highlight CursorColumn cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+"highlight CursorLine   cterm=NONE ctermbg=dark ctermfg=NONE guibg=NONE guifg=NONE
+"highlight CursorColumn cterm=NONE ctermbg=dark ctermfg=NONE guibg=NONE guifg=NONE
 
 "按键映射
 :imap jk <Esc>
