@@ -20,8 +20,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 "主题设置
-"set background=black
-colorscheme molokai
+colors desert  " 指定主题
+set background=dark " 深色主题
 "let g:molokai_original = 1
 
 "设置
@@ -37,8 +37,8 @@ set shiftwidth=4
 "设置光标定位行列
 set cursorcolumn
 set cursorline
-highlight CursorLine   cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
-highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+highlight CursorLine   cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
 "按键映射
 :imap jk <Esc>
