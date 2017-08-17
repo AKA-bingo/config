@@ -57,6 +57,7 @@ highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NO
 
 "按键映射
 :imap jk <Esc>
+:imap qq $
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
