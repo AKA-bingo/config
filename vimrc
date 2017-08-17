@@ -28,13 +28,14 @@ colorscheme molokai  " 指定主题
 "设置
 filetype on "打开文件类型检测功能
 syntax on
-syntax enable
 set nu
+set smartindent "智能对齐
+set autoindent "自动对齐
 set encoding=utf-8
-set tabstop=4
 set expandtab
+set tabstop=4 "tab键的宽度
 set softtabstop=4
-set shiftwidth=4
+set shiftwidth=4 "统一缩进为4
 set langmenu=zn_CN.UTF-8
 set ruler "在编辑过程中，在右下角显示光标位置的状态行
 set laststatus=1  "总是显示状态行
@@ -43,14 +44,15 @@ colorscheme molokai  " 指定主题
 set background=dark
 set t_Co=256   "256色
 set mouse=a  "允许鼠标
+set ignorecase "搜索忽略大小写
 set nocompatible              " 这是必需的 
-filetype off                  " 这是必需的 
+"filetype off                  " 这是必需的 
 
 "设置光标定位行列
 set cursorcolumn
 set cursorline
-"highlight CursorLine   cterm=NONE ctermbg=dark ctermfg=NONE guibg=NONE guifg=NONE
-"highlight CursorColumn cterm=NONE ctermbg=dark ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
 
 "按键映射
 :imap jk <Esc>
