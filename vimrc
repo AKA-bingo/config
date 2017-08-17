@@ -33,7 +33,7 @@ set nu
 set smartindent "智能对齐
 set autoindent "自动对齐
 set encoding=utf-8
-set expandtab
+"set expandtab
 set tabstop=4 "tab键的宽度
 set softtabstop=4
 set shiftwidth=4 "统一缩进为4
@@ -63,20 +63,25 @@ map <Up> <Nop>
 map <Down> <Nop>
 noremap H ^
 noremap L $
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR> 
+"map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR> 
 "YCM settings
-let g:ycm_key_list_select_completion = ['', '']
-let g:ycm_key_list_previous_completion = ['']
-let g:ycm_key_invoke_completion = '<C-Space>'
+"let g:ycm_key_list_select_completion = ['', '']
+"let g:ycm_key_list_previous_completion = ['']
+"let g:ycm_key_invoke_completion = '<C-Space>'
+set completeopt=longest,menu
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项
+let g:ycm_cache_omnifunc=0	" 禁止缓存匹配项,每次都重新生成匹配项
+let g:ycm_seed_identifiers_with_syntax=1	" 语法关键字补全
 
 " UltiSnips setting
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 "============taglist setting================
-let Tlist_Show_One_File=1  
-let Tlist_Exit_OnlyWindow=1
+"let Tlist_Show_One_File=1  
+"let Tlist_Exit_OnlyWindow=1
 
 "============Tagbar setting================
 nmap <F8> :TagbarToggle<CR>
