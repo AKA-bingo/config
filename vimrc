@@ -10,19 +10,23 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'SirVer/ultisnips'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
+"Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'SirVer/ultisnips'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 "主题设置
-"set background=dark
+"set background=black
 colorscheme molokai
-let g:molokai_original = 1
+"let g:molokai_original = 1
 
 "设置
 syntax on
+syntax enable
 set nu
 set encoding=utf-8
 set tabstop=4
@@ -33,8 +37,8 @@ set shiftwidth=4
 "设置光标定位行列
 set cursorcolumn
 set cursorline
-highlight CursorLine   cterm=NONE ctermbg=black ctermfg=white guibg=NONE guifg=NONE
-highlight CursorColumn cterm=NONE ctermbg=black ctermfg=white guibg=NONE guifg=NONE
+highlight CursorLine   cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
+highlight CursorColumn cterm=NONE ctermbg=black ctermfg=green guibg=NONE guifg=NONE
 
 "按键映射
 :imap jk <Esc>
@@ -44,6 +48,26 @@ map <Up> <Nop>
 map <Down> <Nop>
 noremap H ^
 noremap L $
+map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR> 
+"YCM settings
+let g:ycm_key_list_select_completion = ['', '']
+let g:ycm_key_list_previous_completion = ['']
+let g:ycm_key_invoke_completion = '<C-Space>'
+
+" UltiSnips setting
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+"============taglist setting================
+let Tlist_Show_One_File=1  
+let Tlist_Exit_OnlyWindow=1
+
+"============Tagbar setting================
+nmap <F8> :TagbarToggle<CR>
+
+"============NERDTree setting==============
+map <F7> :NERDTreeToggle<CR>
 
 "文件创建添加头部信息
 autocmd BufNewFile *.py,*.sh, exec ":call SetTitle()"  
