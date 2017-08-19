@@ -12,7 +12,7 @@ Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
-Plugin 'tomasr/molokai'
+"Plugin 'tomasr/molokai'
 "Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'SirVer/ultisnips'
 
