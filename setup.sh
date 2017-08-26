@@ -1,5 +1,4 @@
 #!/bin/bash
-cp config/gitconfig ~/.gitconfig
-cp config/vimrc ~/.vimrc
-mkdir ~/.vim
-cp -rf config/colors ~/.vim/
+cp gitconfig ~/.gitconfig
+cp vimrc ~/.vimrc
+cp -rf .vim ~/
