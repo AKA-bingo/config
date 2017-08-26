@@ -22,7 +22,7 @@
 "filetype plugin indent on    " required
 
 "主题设置
-"colorscheme molokai  " 指定主题
+colorscheme molokai  " 指定主题
 "let g:molokai_original = 1
 "let g:rehash256 = 1
 "set background=dark " 深色主题
@@ -31,10 +31,11 @@
 filetype on "打开文件类型检测功能
 syntax on
 set nu
+set backspace=indent,eol,start "兼容删除键
 set smartindent "智能对齐
 set autoindent "自动对齐
 set encoding=utf-8
-"set expandtab
+set expandtab
 set tabstop=4 "tab键的宽度
 set softtabstop=4
 set shiftwidth=4 "统一缩进为4
@@ -42,7 +43,6 @@ set langmenu=zn_CN.UTF-8
 set ruler "在编辑过程中，在右下角显示光标位置的状态行
 set laststatus=1  "总是显示状态行
 set showmatch "高亮显示对应的括号
-colorscheme molokai  " 指定主题
 set background=dark
 set t_Co=256   "256色
 set mouse=a  "允许鼠标
@@ -70,11 +70,11 @@ noremap L $
 "let g:ycm_key_list_previous_completion = ['']
 "let g:ycm_key_invoke_completion = '<C-Space>'
 "=====================use==================================================================
-set completeopt=longest,menu
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项
-let g:ycm_cache_omnifunc=0	" 禁止缓存匹配项,每次都重新生成匹配项
-let g:ycm_seed_identifiers_with_syntax=1	" 语法关键字补全
+"set completeopt=longest,menu
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项
+"let g:ycm_cache_omnifunc=0	" 禁止缓存匹配项,每次都重新生成匹配项
+"let g:ycm_seed_identifiers_with_syntax=1	" 语法关键字补全
 "==========================================================================================
 " UltiSnips setting
 "let g:UltiSnipsExpandTrigger="<tab>"
