@@ -1,27 +1,28 @@
 """"""""""""""vim包管理配置"""""""""""""""
-set nocompatible              " be iMproved, required
-filetype off                  " required
+"set nocompatible              " be iMproved, required
+"filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
+"Plugin 'gmarik/Vundle.vim'
+"Plugin 'fatih/vim-go'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'majutsushi/tagbar'
+"Plugin 'scrooloose/nerdtree'
+"=============unuse=========================
 "Plugin 'tomasr/molokai'
 "Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'SirVer/ultisnips'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+"call vundle#end()            " required
+"filetype plugin indent on    " required
 
 "主题设置
-colorscheme molokai  " 指定主题
+"colorscheme molokai  " 指定主题
 "let g:molokai_original = 1
 "let g:rehash256 = 1
 "set background=dark " 深色主题
@@ -57,7 +58,6 @@ highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NO
 
 "按键映射
 :imap jk <Esc>
-:imap qq $
 map <Left> <Nop>
 map <Right> <Nop>
 map <Up> <Nop>
@@ -69,12 +69,13 @@ noremap L $
 "let g:ycm_key_list_select_completion = ['', '']
 "let g:ycm_key_list_previous_completion = ['']
 "let g:ycm_key_invoke_completion = '<C-Space>'
+"=====================use==================================================================
 set completeopt=longest,menu
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"	"回车即选中当前项
 let g:ycm_cache_omnifunc=0	" 禁止缓存匹配项,每次都重新生成匹配项
 let g:ycm_seed_identifiers_with_syntax=1	" 语法关键字补全
-
+"==========================================================================================
 " UltiSnips setting
 "let g:UltiSnipsExpandTrigger="<tab>"
 "let g:UltiSnipsJumpForwardTrigger="<c-b>"
