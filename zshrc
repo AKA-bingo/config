@@ -1,4 +1,4 @@
-source /usr/local/share/antigen/antigen.zsh
+source antigen_path/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -24,11 +24,11 @@ antigen apply
 
 #GOLANG
 #export GOROOT=/usr/local/go
-export GOPATH=$HOME/workspace/golang
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export GOPROXY=https://goproxy.io
+#export GOPATH=$HOME/workspace/golang
+#export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+#export GOPROXY=https://mirrors.aliyun.com/goproxy/
 
 #Proxy
-export ALL_PROXY=socks5://127.0.0.1:1086
-export http_proxy=http://127.0.0.1:1087
-export https_proxy=http://127.0.0.1:1087;
+#export ALL_PROXY=socks5://127.0.0.1:1086
+#export http_proxy=http://127.0.0.1:1087
+#export https_proxy=http://127.0.0.1:1087;
