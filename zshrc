@@ -27,6 +27,7 @@ antigen apply
 #export GOPATH=$HOME/workspace/golang
 #export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 #export GOPROXY=https://mirrors.aliyun.com/goproxy/
+#export GO111MODULE=on
 
 #Proxy
 #export ALL_PROXY=socks5://127.0.0.1:1086
