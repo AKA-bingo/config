@@ -1,0 +1,8 @@
+"按键映射
+:imap jk <Esc>
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+noremap H ^
+noremap L $
