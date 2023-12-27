@@ -4,12 +4,14 @@ source antigen_path/antigen.zsh
 antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle brew
-antigen bundle docker
-antigen bundle docker-compose
+#antigen bundle git
+#antigen bundle brew
+#antigen bundle docker
 antigen bundle golang
+antigen bundle python
 antigen bundle command-not-found
+antigen bundle MenkeTechnologies/zsh-tig-plugin
+antigen bundle gko/ssh-connect
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
